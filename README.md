@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
 <p align="center">
@@ -76,3 +77,13 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+=======
+# Creating a CMS with Laravel and Vue
+
+## Prerequisites:
+1. PHP basics
+2. Laravel framework basics
+3. Javascript basics (ES6)
+4. Vue basic
+5. Postman installed on your machine
+>>>>>>> 153ccc2922eaac56612a7304fe2c37d3b6678041
