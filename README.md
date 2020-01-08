@@ -8,6 +8,7 @@
     5. Postman installed on your machine
     6. MySQL Workbench
 
+
 ---------------------------------------------------------------------------------
 **Important but optional, run ``composer update`` to download updates via composer**
 ---------------------------------------------------------------------------------
