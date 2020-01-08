@@ -28,3 +28,52 @@
     </form>
     </div>
 </template>
+<script>
+export default {
+    mounted() {
+    this.getPost();
+    },
+    props: {
+    postId: {
+        type: Number,
+        required: true
+    }
+    },
+    data() {
+    return {
+        error: false,
+        successful: false,
+        errors: []
+    };
+    },
+    methods: {
+    update() {
+        let title = this.$refs.title.value;
+        let body = this.$refs.body.value;
+
+        axios
+        .put("/api/posts/" + this.postId, { title, body })
+        .then(response => {
+            this.successful = true;
+            this.error = false;
+            this.errors = [];
+        })
+        .catch(error => {
+            if (!_.isEmpty(error.response)) {
+            if ((error.response.status = 422)) {
+                this.errors = error.response.data.errors;
+                this.successful = false;
+                this.error = true;
+            }
+            }
+        });
+    },
+    getPost() {
+        axios.get("/api/posts/" + this.postId).then(response => {
+        this.$refs.title.value = response.data.data.title;
+        this.$refs.body.value = response.data.data.body;
+        });
+    }
+    }
+};
+</script>
