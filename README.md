@@ -1,3 +1,5 @@
+            [![Logo do Laravel](https://miro.medium.com/max/934/1*cPt2YI-5YxhfL3_Uhw0txA.png)](https://laravel.com/)]
+
 # Creating a CMS with Laravel and Vue
 
 ## Prerequisites:
